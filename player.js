@@ -139,11 +139,14 @@ var playSong = function(song, bpm, onComplete) {
 
     currNote++;
 
-    if (currNote < song.length) {
-      setTimeout(playNextNote, duration * MILLIS_PER_SECOND);
-    } else {
-      onComplete();
-    }
+    setTimeout(function() {
+      if (currNote < song.length) {
+        playNextNote();
+      } else {
+        onComplete();
+      }
+    }, duration * MILLIS_PER_SECOND);
+
   };
 
   playNextNote();
