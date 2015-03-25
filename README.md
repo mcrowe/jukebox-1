@@ -8,7 +8,7 @@ You will build a Jukebox app using Javascript. It won't be that impressive at fi
 - Jukebox plays the song the user entered.
 - When the song is finished playing, Jukebox prompts the user to enter another song.
 
-Songs will be entered in the following format: "A B C# D". These letters represent the pitch (or frequency) to play. The user can also optionally specify the length of each note (the number of beats) using the following format: "A*2 B C#*3 D". If beats aren't specified, they default to 1.
+Songs will be entered in the following format: `"A B C# D"`. These letters represent the pitch (or frequency) to play. The user can also optionally specify the length of each note (the number of beats) using the following format: `"A*2 B C#*3 D"`. If beats aren't specified, they default to 1.
 
 I've provided you with `player.js` which defines the `playSong` function to play a song composed of an array of note objects. You can use `playSong` as follows:
 
