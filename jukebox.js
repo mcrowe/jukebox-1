@@ -36,6 +36,7 @@ var onComplete = function () {
   var replay = prompt('Would you like to play again? y or n');
   if (replay == "y") {
     var userString = prompt('Give me a list of notes to play');
+    var song = parseSong(userString);
     playSong(song, bpm, onComplete);
   } else {
     prompt('Thanks for playing!');
